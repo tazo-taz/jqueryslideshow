@@ -1,0 +1,49 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.gallery {
+	position: absolute;
+	width: 300px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.gallery .lefticon,.gallery .righticon {
+	position: absolute;
+	top: 40%;
+	transform: translateY(-50%);
+	padding: 5px;
+	background-color: red;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.gallery .lefticon {
+	left: 5px;
+}
+.gallery .righticon {
+	right: 5px;
+}
+.mainimg img{
+	width: 300px;
+}
+.thumbs {
+	width: 300px;
+}
+.gallery img {
+	border: 3px solid black;
+}
+.thumbs img {
+	width: 18.7%;
+	display: inline-block;
+	cursor: pointer;
+	transition: .2s;
+}
+.thumbs img:not(:last-child){
+	margin-right: .01%;
+}
+
+.thumbs .active {
+	border: 3px solid rgb(114, 12, 12);
+}
